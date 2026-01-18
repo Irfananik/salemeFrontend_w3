@@ -1,0 +1,107 @@
+.search-profiles-container {
+  border: none;
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 24px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.search-profiles-container h2 {
+  margin: 0 0 18px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+.search-form button {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.search-form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.3);
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-card {
+  border: none;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+  margin: 0 0 10px 0;
+  color: #1976d2;
+  font-size: 16px;
+}
+
+.profile-card p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.profile-card strong {
+  color: #333;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}

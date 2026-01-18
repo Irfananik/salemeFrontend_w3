@@ -1,0 +1,41 @@
+.create-post-container {
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.create-post-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.create-post-form input,
+.create-post-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.create-post-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.create-post-form button {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-post-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

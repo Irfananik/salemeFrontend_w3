@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import EmployerDashboard from './pages/EmployerDashboard';
+import Footer from './components/Footer';
 
 export const AuthContext = React.createContext();
 
@@ -56,6 +57,7 @@ function App() {
               <Route path="/employer" element={<EmployerDashboard />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </Router>
     </AuthContext.Provider>

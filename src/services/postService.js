@@ -1,5 +1,6 @@
-
 import apiClient from './apiClient';
+export const deletePost = (postId) => apiClient.delete(`/posts/${postId}`);
+export const updatePost = (postId, data) => apiClient.put(`/posts/${postId}`, data);
 // Add like/dislike endpoints
 export const likePost = (postId, employerName, employerEmail) =>
   apiClient.post(
@@ -27,4 +28,6 @@ export default {
   searchProfiles,
   likePost,
   dislikePost,
+  deletePost,
+  updatePost,
 };
